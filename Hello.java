@@ -13,6 +13,22 @@ class Menu {
     public void getName() {
         System.out.println("This is a " + this.name + " menu");
     }
+
+    public static void main(String[] args) {
+        // ! NOTE: String is object in java
+        // ? when we create a string object, the String() constructor is invoked. A new
+        // string is created even it exists in the memory pool
+        // string concatenation method
+        String first = "Java ";
+        String second = new String("Programming");
+        String joinedString = first.concat(second);
+        // System.out.println("Joined String: " + joinedString); // or
+        // System.out.println(first + second);
+        /* string compare */
+        System.out.println(first.equals(second)); // or
+        System.out.println(first == second);
+        System.out.println(joinedString.contains(first));
+    }
 }
 
 // class name and file name should be same
