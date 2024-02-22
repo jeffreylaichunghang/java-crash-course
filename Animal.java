@@ -5,6 +5,10 @@ public class Animal {
 
     String name;
 
+    Animal(String type) {
+        System.out.println("I am a " + type + " animal");
+    }
+
     public void eat() {
         System.out.println("I can eat");
     }
@@ -16,6 +20,12 @@ public class Animal {
 
 // subclass
 class Dog extends Animal {
+
+    Dog() {
+        super("four foot");
+
+        System.out.println("I am a dog");
+    }
 
     public void display() {
         System.out.println("My name is " + name);
@@ -36,6 +46,6 @@ class Dog extends Animal {
         mark.name = "Mark";
         // mark.display();
         // mark.eat();
-        mark.tobeOveride();
+        // mark.tobeOveride();
     }
 }
