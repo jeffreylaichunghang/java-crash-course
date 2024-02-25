@@ -3,10 +3,6 @@
  *  - compile-time type safety
  */
 
-enum Size {
-    SMALL, MEDIUM, LARGE, EXTRALARGE;
-}
-
 class Pizza {
     Size pizzaSize;
 
