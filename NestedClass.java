@@ -1,6 +1,6 @@
 /*
  * Nested Class: static || non-static
- *
+ * Java doesn't allow top-level static class
  */
 
 class CPU {
@@ -30,6 +30,11 @@ class CPU {
 }
 
 class MotherBoard {
+
+    // ! non-static method cannot be accessed from the static class
+    public void display() {
+        System.out.println("This is a mother board");
+    }
 
     /* Static nested class */
     static class USB {
