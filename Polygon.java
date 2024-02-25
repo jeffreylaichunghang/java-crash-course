@@ -2,7 +2,6 @@
  * Interface
  *
  * ? interface provides specifications that a class implementing it must follow
- *
  */
 
 // all classes implment polygon must provide getArea method
