@@ -4,6 +4,11 @@ public class ListOfNumbers {
 
     private int[] list = { 5, 7, 3, 6, 2 };
 
+    public static void findFile() throws IOException {
+        File newFile = new File("test.txt");
+        FileInputStream stream = new FileInputStream(newFile);
+    }
+
     public void writeList() {
         // PrintWriter out = null;
 
@@ -31,7 +36,13 @@ public class ListOfNumbers {
     }
 
     public static void main(String[] args) {
-        ListOfNumbers list = new ListOfNumbers();
-        list.writeList();
+        // ListOfNumbers list = new ListOfNumbers();
+        // list.writeList();
+        try {
+            findFile();
+        } catch (IOException e) {
+            // TODO: handle exception
+            System.out.println(e);
+        }
     }
 }
