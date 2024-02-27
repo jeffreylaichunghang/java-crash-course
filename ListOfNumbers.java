@@ -9,10 +9,10 @@ public class ListOfNumbers {
         FileInputStream stream = new FileInputStream(newFile);
     }
 
-    public void writeList() {
-        // PrintWriter out = null;
+    public void writeList() throws IOException {
+        PrintWriter out = new PrintWriter(new FileWriter("OutputFile.txt"));
 
-        try (PrintWriter out = new PrintWriter(new FileWriter("OutputFile.txt"))) {
+        try (out) {
             System.out.println("Entering try statement");
 
             // out = new PrintWriter(new FileWriter("OutputFile.txt"));
