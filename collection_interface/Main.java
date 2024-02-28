@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Vector;
 import java.util.Iterator;
+import java.util.Stack;
 
 /*
  * List:
@@ -77,9 +78,32 @@ class Main {
         System.out.println("Vector after clear: " + animals);
     }
 
+    public static void stack() {
+        // ! ArrayDeque is better than Stack
+        Stack<String> animals = new Stack<>();
+
+        animals.push("Dog");
+        animals.push("Horse");
+        animals.push("Cat");
+
+        System.out.println("Stack: " + animals);
+
+        String animal = animals.pop();
+        System.out.println("Removed Element: " + animal);
+
+        // get the top element
+        String topElement = animals.peek();
+        System.out.println("Top element: " + topElement);
+
+        int dogIndex = animals.search("Dog");
+        System.out.println("Position of Horse: " + dogIndex);
+        System.out.println("Is the stack empty ? " + animals.empty());
+    }
+
     public static void main(String[] args) {
         // arraylist();
         // linklist();
-        vector();
+        // vector();
+        stack();
     }
 }
