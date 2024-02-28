@@ -3,6 +3,8 @@ package collection_interface;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.LinkedList;
+import java.util.Vector;
+import java.util.Iterator;
 
 /*
  * List:
@@ -50,8 +52,34 @@ class Main {
         System.out.println("Removed element: " + removeNumber);
     }
 
+    public static void vector() {
+        Vector<String> mammals = new Vector<>();
+        Vector<String> animals = new Vector<>();
+
+        mammals.add("Dog");
+        mammals.add("Horse");
+        mammals.add(2, "Cat");
+        System.out.println("Vector: " + mammals);
+
+        animals.add("Crocodile");
+        animals.addAll(mammals);
+        System.out.println("New Vector: " + animals);
+
+        Iterator<String> iterator = animals.iterator();
+        System.out.println("Iterator vector: " + iterator);
+        while (iterator.hasNext()) {
+            System.out.print(iterator.next());
+            System.out.print(", ");
+        }
+
+        animals.clear();
+        System.out.println();
+        System.out.println("Vector after clear: " + animals);
+    }
+
     public static void main(String[] args) {
         // arraylist();
-        linklist();
+        // linklist();
+        vector();
     }
 }
