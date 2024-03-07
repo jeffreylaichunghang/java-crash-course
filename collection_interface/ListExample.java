@@ -16,7 +16,7 @@ import java.util.Stack;
  *
  */
 
-class Main {
+class ListExample {
 
     public static void arraylist() {
         List<Integer> numbers = new ArrayList<>();
