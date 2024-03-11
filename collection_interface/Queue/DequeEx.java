@@ -12,7 +12,7 @@ import java.util.LinkedList;
 
 public class DequeEx {
 
-    public static void linedList() {
+    public static void linkedList() {
         LinkedList<String> animals = new LinkedList<>();
 
         animals.add("Dog");
@@ -34,6 +34,6 @@ public class DequeEx {
     }
 
     public static void main(String[] args) {
-        linedList();
+        linkedList();
     }
 }
