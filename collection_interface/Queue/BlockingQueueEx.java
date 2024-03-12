@@ -6,6 +6,8 @@ import java.util.concurrent.ArrayBlockingQueue;
  * Interface BlockingQueue
  *  - ArrayBlockingQueue
  *  - LinkedBlockingQueue
+ *
+ *  helpful in multi-threading operation
  */
 
 public class BlockingQueueEx {
